@@ -17,7 +17,7 @@ namespace Marathon
             InitializeComponent();
         }
 
-        Marathon_SkillsDataSet.ListRunnersSponsorsDataTable dataSponsorsOfRunner;
+        Marathon_SkillsDataSet.RunnersOdSponsorsDataTable dataSponsorsOfRunner;
 
         private void RunnersMySponsors_Load(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace Marathon
             System.IO.MemoryStream stream;
             Bitmap bit, bitNot;
             bitNot = new Bitmap(Resource.Anonim);
-            dataSponsorsOfRunner = listRunnersSponsorsTableAdapter1.GetData(Total.idUser);
+            dataSponsorsOfRunner = runnersOdSponsorsTableAdapter2.GetDataByIDRun(Total.idUser);
             if (dataSponsorsOfRunner.Count == 0)	
             {
                 MessageBox.Show("У Вас нет спонсоров");

@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.runnerSponsorTableAdapter1 = new Marathon.Marathon_SkillsDataSetTableAdapters.RunnerSponsorTableAdapter();
-            this.listRunnersSponsors1 = new Marathon.Marathon_SkillsDataSetTableAdapters.ListRunnersSponsors();
+            this.runnersOdSponsorsTableAdapter2 = new Marathon.Marathon_SkillsDataSetTableAdapters.RunnersOdSponsorsTableAdapter();
             this.SuspendLayout();
             // 
             // btExit
@@ -95,9 +95,9 @@
             // 
             this.runnerSponsorTableAdapter1.ClearBeforeFill = true;
             // 
-            // listRunnersSponsors1
+            // runnersOdSponsorsTableAdapter2
             // 
-            this.listRunnersSponsors1.ClearBeforeFill = true;
+            this.runnersOdSponsorsTableAdapter2.ClearBeforeFill = true;
             // 
             // RunnersMySponsors
             // 
@@ -126,8 +126,7 @@
         private System.Windows.Forms.TextBox tbTotalSponsor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Marathon_SkillsDataSetTableAdapters.ListRunnersSponsors listRunnersSponsorsTableAdapter1;
         private Marathon_SkillsDataSetTableAdapters.RunnerSponsorTableAdapter runnerSponsorTableAdapter1;
-        private Marathon_SkillsDataSetTableAdapters.ListRunnersSponsors listRunnersSponsors1;
+        private Marathon_SkillsDataSetTableAdapters.RunnersOdSponsorsTableAdapter runnersOdSponsorsTableAdapter2;
     }
 }
