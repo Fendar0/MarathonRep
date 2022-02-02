@@ -50,5 +50,14 @@ namespace Marathon
                 this.Show();
             }
         }
+
+        private void btMySponsor_Click(object sender, EventArgs e)
+        {
+            RunnersMySponsors rms = new RunnersMySponsors();
+            Hide();
+            rms.ShowDialog();
+            Show();
+
+        }
     }
 }

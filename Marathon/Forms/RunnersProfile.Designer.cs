@@ -56,7 +56,7 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.usersTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.UsersTableAdapter();
             this.runnersTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.RunnersTableAdapter();
-            this.runnersCountryTableAdapter1 = new Marathon.Marathon_SkillsDataSetTableAdapters.RunnersCountryTableAdapter();
+            this.runnersGenderCountryTableAdapter1 = new Marathon.Marathon_SkillsDataSetTableAdapters.RunnersGenderCountryTableAdapter();
             this.countriesTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.CountriesTableAdapter();
             this.btEdit = new System.Windows.Forms.Button();
             this.pbPhoto = new System.Windows.Forms.PictureBox();
@@ -338,7 +338,7 @@
             // 
             // runnersCountryTableAdapter1
             // 
-            this.runnersCountryTableAdapter1.ClearBeforeFill = true;
+            this.runnersGenderCountryTableAdapter1.ClearBeforeFill = true;
             // 
             // countriesTableAdapter
             // 
@@ -418,8 +418,8 @@
         private Marathon_SkillsDataSetTableAdapters.RunnersTableAdapter runnersTableAdapter;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.TextBox textBoxPathPhoto;
-        private Marathon_SkillsDataSetTableAdapters.RunnersCountryTableAdapter runnersCountryTableAdapter;
-        private Marathon_SkillsDataSetTableAdapters.RunnersCountryTableAdapter runnersCountryTableAdapter1;
+        private Marathon_SkillsDataSetTableAdapters.RunnersGenderCountryTableAdapter runnersGenderCountryTableAdapter;
+        private Marathon_SkillsDataSetTableAdapters.RunnersGenderCountryTableAdapter runnersGenderCountryTableAdapter1;
         private Marathon_SkillsDataSetTableAdapters.CountriesTableAdapter countriesTableAdapter;
         private System.Windows.Forms.Button btEdit;
     }

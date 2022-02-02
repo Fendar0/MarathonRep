@@ -86,6 +86,9 @@
     <Compile Include="Forms\History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
+    <Compile Include="Marathon_SkillsDataSet.cs">
+      <DependentUpon>Marathon_SkillsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Marathon_SkillsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,16 +102,28 @@
     <Compile Include="Forms\RunnersProfile.Designer.cs">
       <DependentUpon>RunnersProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SponsorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SponsorProfile.Designer.cs">
+      <DependentUpon>SponsorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SponsorRunners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SponsorRunners.Designer.cs">
+      <DependentUpon>SponsorRunners.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="SponsorProfile.cs">
+    <Compile Include="Forms\RunnersMySponsors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SponsorProfile.Designer.cs">
-      <DependentUpon>SponsorProfile.cs</DependentUpon>
+    <Compile Include="Forms\RunnersMySponsors.Designer.cs">
+      <DependentUpon>RunnersMySponsors.cs</DependentUpon>
     </Compile>
     <Compile Include="Total.cs" />
     <Compile Include="Forms\WorkAccount.cs">
@@ -147,12 +162,18 @@
     <EmbeddedResource Include="Forms\WorkAccount.resx">
       <DependentUpon>WorkAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SponsorProfile.resx">
+      <DependentUpon>SponsorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SponsorRunners.resx">
+      <DependentUpon>SponsorRunners.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SponsorProfile.resx">
-      <DependentUpon>SponsorProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RunnersMySponsors.resx">
+      <DependentUpon>RunnersMySponsors.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Marathon_SkillsDataSet.xsc">
       <DependentUpon>Marathon_SkillsDataSet.xsd</DependentUpon>
@@ -180,7 +201,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Anonim.png" />
+    <None Include="Resources\Anonim.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -58,7 +58,7 @@ namespace Marathon
                     textBoxWallet.Text = rowRunner.Wallet.ToString();
                     tbName.Text = rowRunner.FirstName;
                     tbLastname.Text = rowRunner.LastName;
-                    cbGenders.SelectedValue = rowRunner.Sex;
+                    cbGenders.Text = rowRunner.Sex;
                     dtPickerBirthday.Value = rowRunner.Birthday;
                     cbCountries.SelectedValue = rowRunner.IDCountry;
                     maskedtbPhone.Text = rowRunner.PhoneNumber;
@@ -134,7 +134,8 @@ namespace Marathon
 
         private void buttonGoRunner_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+            Close();
         }
 
         private void btEdit_Click(object sender, EventArgs e)
@@ -148,7 +149,7 @@ namespace Marathon
             }
             rowRunner.FirstName = runnerName;
             rowRunner.LastName = runnerLastname;
-            rowRunner.Sex = (string)cbGenders.SelectedValue;
+            rowRunner.Sex = (string)cbGenders.Text;
             rowRunner.Birthday = dtPickerBirthday.Value;
             rowRunner.IDCountry = (int)cbCountries.SelectedValue;
             rowRunner.PhoneNumber = maskedtbPhone.Text;

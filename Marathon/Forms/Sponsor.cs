@@ -48,5 +48,13 @@ namespace Marathon
             }
         }
 
+        private void btSponsering_Click(object sender, EventArgs e)
+        {
+            SponsorRunners fsr = new SponsorRunners();
+            Hide();
+            fsr.ShowDialog();
+            Show();
+
+        }
     }
 }

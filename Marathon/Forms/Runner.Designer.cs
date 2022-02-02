@@ -31,6 +31,7 @@ namespace Marathon
         {
             this.button1 = new System.Windows.Forms.Button();
             this.runnersCountryTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.RunnersCountryTableAdapter();
+            this.btMySponsor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -48,11 +49,23 @@ namespace Marathon
             // 
             this.runnersCountryTableAdapter.ClearBeforeFill = true;
             // 
+            // btMySponsor
+            // 
+            this.btMySponsor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btMySponsor.Location = new System.Drawing.Point(12, 59);
+            this.btMySponsor.Name = "btMySponsor";
+            this.btMySponsor.Size = new System.Drawing.Size(140, 41);
+            this.btMySponsor.TabIndex = 1;
+            this.btMySponsor.Text = "My Sponsors";
+            this.btMySponsor.UseVisualStyleBackColor = true;
+            this.btMySponsor.Click += new System.EventHandler(this.btMySponsor_Click);
+            // 
             // Runner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btMySponsor);
             this.Controls.Add(this.button1);
             this.Name = "Runner";
             this.Text = "Form_Runner";
@@ -66,5 +79,6 @@ namespace Marathon
         private System.Windows.Forms.Button button1;
         private Marathon_SkillsDataSetTableAdapters.RunnersCountryTableAdapter runnersCountryTableAdapter1;
         private Marathon_SkillsDataSetTableAdapters.RunnersCountryTableAdapter runnersCountryTableAdapter;
+        private System.Windows.Forms.Button btMySponsor;
     }
 }

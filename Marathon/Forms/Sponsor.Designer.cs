@@ -32,6 +32,7 @@ namespace Marathon
             this.btProfile = new System.Windows.Forms.Button();
             this.sponsorsTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.SponsorsTableAdapter();
             this.usersTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.UsersTableAdapter();
+            this.btSponsering = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btProfile
@@ -39,7 +40,7 @@ namespace Marathon
             this.btProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btProfile.Location = new System.Drawing.Point(12, 12);
             this.btProfile.Name = "btProfile";
-            this.btProfile.Size = new System.Drawing.Size(140, 41);
+            this.btProfile.Size = new System.Drawing.Size(177, 41);
             this.btProfile.TabIndex = 1;
             this.btProfile.Text = "Profile";
             this.btProfile.UseVisualStyleBackColor = true;
@@ -53,11 +54,23 @@ namespace Marathon
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // btSponsering
+            // 
+            this.btSponsering.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btSponsering.Location = new System.Drawing.Point(12, 71);
+            this.btSponsering.Name = "btSponsering";
+            this.btSponsering.Size = new System.Drawing.Size(177, 41);
+            this.btSponsering.TabIndex = 2;
+            this.btSponsering.Text = "To sponsor";
+            this.btSponsering.UseVisualStyleBackColor = true;
+            this.btSponsering.Click += new System.EventHandler(this.btSponsering_Click);
+            // 
             // Sponsor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btSponsering);
             this.Controls.Add(this.btProfile);
             this.Name = "Sponsor";
             this.Text = "Form_Sponsor";
@@ -70,5 +83,6 @@ namespace Marathon
         private System.Windows.Forms.Button btProfile;
         private Marathon_SkillsDataSetTableAdapters.SponsorsTableAdapter sponsorsTableAdapter;
         private Marathon_SkillsDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
+        private System.Windows.Forms.Button btSponsering;
     }
 }
