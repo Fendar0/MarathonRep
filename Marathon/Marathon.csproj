@@ -56,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormResultsMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormResultsMarathon.Designer.cs">
+      <DependentUpon>FormResultsMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegInMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegInMarathon.Designer.cs">
+      <DependentUpon>FormRegInMarathon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Organizer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,8 +144,14 @@
     <Compile Include="Forms\WorkAccount.Designer.cs">
       <DependentUpon>WorkAccount.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\FormResultsMarathon.resx">
+      <DependentUpon>FormResultsMarathon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRegInMarathon.resx">
+      <DependentUpon>FormRegInMarathon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Organizer.resx">
       <DependentUpon>Organizer.cs</DependentUpon>
@@ -202,6 +220,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Anonim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

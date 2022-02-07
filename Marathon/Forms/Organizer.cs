@@ -40,5 +40,18 @@ namespace Marathon
             wa.ShowDialog();
             Show();
         }
+
+        private void btResults_Click(object sender, EventArgs e)
+        {
+            FormResultsMarathon res = new FormResultsMarathon();
+            Close();
+            res.ShowDialog();
+
+        }
+
+        private void Form_organizer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

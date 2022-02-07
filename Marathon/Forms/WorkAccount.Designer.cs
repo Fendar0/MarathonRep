@@ -53,18 +53,18 @@ namespace Marathon
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(355, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 26);
+            this.label1.Size = new System.Drawing.Size(228, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Work with account";
+            this.label1.Text = "Работа с аккаунтами";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(406, 262);
+            this.button1.Location = new System.Drawing.Point(406, 289);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(399, 38);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Back to form organizer";
+            this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -73,9 +73,9 @@ namespace Marathon
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(406, 198);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 58);
+            this.button2.Size = new System.Drawing.Size(198, 85);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Registration new user";
+            this.button2.Text = "Регистрация нового пользователя";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -84,9 +84,9 @@ namespace Marathon
             this.buttonInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonInsert.Location = new System.Drawing.Point(610, 198);
             this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(195, 59);
+            this.buttonInsert.Size = new System.Drawing.Size(195, 85);
             this.buttonInsert.TabIndex = 5;
-            this.buttonInsert.Text = "Type user";
+            this.buttonInsert.Text = "Ввести пользователя";
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -98,7 +98,7 @@ namespace Marathon
             this.dataGridViewAccounts.Location = new System.Drawing.Point(12, 44);
             this.dataGridViewAccounts.Name = "dataGridViewAccounts";
             this.dataGridViewAccounts.ReadOnly = true;
-            this.dataGridViewAccounts.Size = new System.Drawing.Size(384, 256);
+            this.dataGridViewAccounts.Size = new System.Drawing.Size(384, 283);
             this.dataGridViewAccounts.TabIndex = 6;
             this.dataGridViewAccounts.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAccounts_RowEnter);
             // 
@@ -116,7 +116,7 @@ namespace Marathon
             this.groupBoxAccount.Size = new System.Drawing.Size(399, 147);
             this.groupBoxAccount.TabIndex = 7;
             this.groupBoxAccount.TabStop = false;
-            this.groupBoxAccount.Text = "Data account";
+            this.groupBoxAccount.Text = "Данные аккаунта";
             // 
             // label4
             // 
@@ -124,9 +124,9 @@ namespace Marathon
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(6, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 26);
+            this.label4.Size = new System.Drawing.Size(64, 26);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Role";
+            this.label4.Text = "Роль";
             // 
             // comboBoxRole
             // 
@@ -142,9 +142,9 @@ namespace Marathon
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(6, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 26);
+            this.label2.Size = new System.Drawing.Size(72, 26);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Login";
+            this.label2.Text = "Логин";
             // 
             // label3
             // 
@@ -152,9 +152,9 @@ namespace Marathon
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(6, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 26);
+            this.label3.Size = new System.Drawing.Size(89, 26);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Password";
+            this.label3.Text = "Пароль";
             // 
             // textBoxPassword
             // 
@@ -182,7 +182,7 @@ namespace Marathon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 310);
+            this.ClientSize = new System.Drawing.Size(816, 333);
             this.Controls.Add(this.groupBoxAccount);
             this.Controls.Add(this.dataGridViewAccounts);
             this.Controls.Add(this.buttonInsert);
@@ -190,7 +190,7 @@ namespace Marathon
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "WorkAccount";
-            this.Text = "WorkAccount";
+            this.Text = "Аккаунты";
             this.Load += new System.EventHandler(this.WorkAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccounts)).EndInit();
             this.groupBoxAccount.ResumeLayout(false);

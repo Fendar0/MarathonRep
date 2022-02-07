@@ -30,7 +30,6 @@ namespace Marathon
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
@@ -44,16 +43,9 @@ namespace Marathon
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.LBIncorrect = new System.Windows.Forms.Label();
             this.loginHistoryTableAdapter = new Marathon.Marathon_SkillsDataSetTableAdapters.LoginHistoryTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(198, 166);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -61,9 +53,9 @@ namespace Marathon
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(202, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 26);
+            this.label1.Size = new System.Drawing.Size(145, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Authorization";
+            this.label1.Text = "Авторизация";
             // 
             // labelEmail
             // 
@@ -71,9 +63,9 @@ namespace Marathon
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelEmail.Location = new System.Drawing.Point(233, 53);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(68, 26);
+            this.labelEmail.Size = new System.Drawing.Size(72, 26);
             this.labelEmail.TabIndex = 2;
-            this.labelEmail.Text = "Email";
+            this.labelEmail.Text = "Логин";
             // 
             // labelPassword
             // 
@@ -81,9 +73,9 @@ namespace Marathon
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPassword.Location = new System.Drawing.Point(233, 94);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(108, 26);
+            this.labelPassword.Size = new System.Drawing.Size(89, 26);
             this.labelPassword.TabIndex = 3;
-            this.labelPassword.Text = "Password";
+            this.labelPassword.Text = "Пароль";
             // 
             // TBEmail
             // 
@@ -110,7 +102,7 @@ namespace Marathon
             this.SignIn.Name = "SignIn";
             this.SignIn.Size = new System.Drawing.Size(155, 33);
             this.SignIn.TabIndex = 6;
-            this.SignIn.Text = "Sign in";
+            this.SignIn.Text = "Войти";
             this.SignIn.UseVisualStyleBackColor = true;
             this.SignIn.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -121,7 +113,7 @@ namespace Marathon
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(155, 33);
             this.Exit.TabIndex = 7;
-            this.Exit.Text = "Exit";
+            this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -131,9 +123,9 @@ namespace Marathon
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.Location = new System.Drawing.Point(357, 126);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(163, 28);
+            this.checkBox1.Size = new System.Drawing.Size(182, 28);
             this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Show password";
+            this.checkBox1.Text = "Показать пароль";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -161,16 +153,26 @@ namespace Marathon
             this.LBIncorrect.AutoSize = true;
             this.LBIncorrect.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LBIncorrect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBIncorrect.Location = new System.Drawing.Point(277, 157);
+            this.LBIncorrect.Location = new System.Drawing.Point(243, 157);
             this.LBIncorrect.Name = "LBIncorrect";
-            this.LBIncorrect.Size = new System.Drawing.Size(243, 24);
+            this.LBIncorrect.Size = new System.Drawing.Size(296, 24);
             this.LBIncorrect.TabIndex = 10;
-            this.LBIncorrect.Text = "Login or password incorrect";
+            this.LBIncorrect.Text = "логин или пароль не корректны";
             this.LBIncorrect.Visible = false;
             // 
             // loginHistoryTableAdapter
             // 
             this.loginHistoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Marathon.Resource.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(198, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Authorization
             // 
@@ -189,7 +191,7 @@ namespace Marathon
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Authorization";
-            this.Text = "Authorization";
+            this.Text = "Авторизация";
             this.Load += new System.EventHandler(this.Authorization_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

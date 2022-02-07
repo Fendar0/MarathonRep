@@ -56,5 +56,18 @@ namespace Marathon
             Show();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormResultsMarathon res = new FormResultsMarathon();
+            Hide();
+            res.ShowDialog();
+            Show();
+        }
     }
 }

@@ -59,5 +59,26 @@ namespace Marathon
             Show();
 
         }
+
+        private void btSignUp_Click(object sender, EventArgs e)
+        {
+            FormRegInMarathon reg = new FormRegInMarathon();
+            Hide();
+            reg.ShowDialog();
+            Show();
+        }
+
+        private void btBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormResultsMarathon res = new FormResultsMarathon();
+            Hide();
+            res.ShowDialog();
+            Show();
+        }
     }
 }

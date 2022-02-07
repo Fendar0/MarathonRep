@@ -4,6 +4,9 @@
 
     public partial class Marathon_SkillsDataSet
     {
+        partial class ResultsMarathonDataTable
+        {
+        }
     }
 }
 

@@ -49,4 +49,6 @@ C:\Users\micha\Source\Repos\MarathonRep\Marathon\bin\Debug\EntityFramework.SqlSe
 C:\Users\micha\Source\Repos\MarathonRep\Marathon\bin\Debug\EntityFramework.xml
 C:\Users\micha\Source\Repos\MarathonRep\Marathon\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\micha\Source\Repos\MarathonRep\Marathon\obj\Debug\Marathon.csproj.CopyComplete
+C:\Users\micha\Source\Repos\MarathonRep\Marathon\obj\Debug\Marathon.FormRegInMarathon.resources
+C:\Users\micha\Source\Repos\MarathonRep\Marathon\obj\Debug\Marathon.FormResultsMarathon.resources
 C:\Users\micha\Source\Repos\MarathonRep\Marathon\obj\Debug\Marathon.csproj.AssemblyReference.cache
