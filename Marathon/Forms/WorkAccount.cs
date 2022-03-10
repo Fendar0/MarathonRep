@@ -28,6 +28,22 @@ namespace Marathon
             this.buttonInsert.Enabled = true;
         }
 
+        public string NullableLog(string login)
+        {
+            bool param = false;
+            param |= String.IsNullOrEmpty(login);
+            string res = param.ToString();
+            return res;
+        }
+
+        public string NullablePass(string passwrod)
+        {
+            bool param = false;
+            param |= String.IsNullOrEmpty(passwrod);
+            string res = param.ToString();
+            return res;
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             string log = textBoxLogin.Text;
@@ -79,7 +95,15 @@ namespace Marathon
                                                     Environment.NewLine + " Введите другие данные");
                 return;
             }
+        }
 
+        public int Exists(string login, string password)
+        {
+            int res;
+            dataUsers = usersTableAdapter.GetData();
+            var filter = dataUsers.Where(rec => rec.Email == login && rec.Password == password);
+            res = filter.Count();
+            return res;
         }
 
         private void button1_Click(object sender, EventArgs e)

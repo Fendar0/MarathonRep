@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Marathon
 {
-    class Total
+    public class Total
     {
         public static int idUser;
         public static int idRole;
         public static string login;
+
     }
 }

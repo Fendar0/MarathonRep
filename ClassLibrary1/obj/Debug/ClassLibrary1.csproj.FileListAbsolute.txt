@@ -1,0 +1,10 @@
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\bin\Debug\Marathon.exe
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\bin\Debug\Marathon.pdb
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\bin\Debug\Marathon.exe.config
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\micha\source\repos\MarathonRep\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

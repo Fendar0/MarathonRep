@@ -5,7 +5,32 @@
       "ProjectGuid": "4f8d31d6-494a-4ac2-8e22-74dfb045e146",
       "DisplayName": "Marathon",
       "ColorIndex": 0
+    },
+    "3bc94968-54c6-42a5-bf4f-4ecf88a4f130": {
+      "ProjectGuid": "3bc94968-54c6-42a5-bf4f-4ecf88a4f130",
+      "DisplayName": "Marathon.Tests",
+      "ColorIndex": 1
+    },
+    "6b1c3bb5-848b-4978-9d42-ab09e159c71b": {
+      "ProjectGuid": "6b1c3bb5-848b-4978-9d42-ab09e159c71b",
+      "DisplayName": "ClassLibraryMarathon",
+      "ColorIndex": 2
+    },
+    "9607a312-124c-4ecb-8067-f59f42a07521": {
+      "ProjectGuid": "9607a312-124c-4ecb-8067-f59f42a07521",
+      "DisplayName": "ClassLibrary1",
+      "ColorIndex": 3
+    },
+    "0ca95bbd-a54d-47fa-9970-f696c56d0d5c": {
+      "ProjectGuid": "0ca95bbd-a54d-47fa-9970-f696c56d0d5c",
+      "DisplayName": "UnitTestMarathon",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }

@@ -18,5 +18,8 @@ namespace Marathon
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Authorization());
         }
+
+        public static Total total { get; } = new Total();
+
     }
 }

@@ -19,12 +19,20 @@ namespace Marathon
 
         int _tiks;
         int _tiks2;
-        int count = 0;
-        
+        int count = 0;        
 
         public Authorization()
         {
             InitializeComponent();
+        }
+
+        public int Auth(string login, string password)
+        {
+            int res;
+            dataUsers = usersTableAdapter.GetData();
+            var filter = dataUsers.Where(rec => rec.Email == login && rec.Password == password);
+            res = filter.ElementAt(0).IDRole;
+            return res;
         }
 
         private void button1_Click(object sender, EventArgs e)
